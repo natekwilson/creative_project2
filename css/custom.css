@@ -1,0 +1,83 @@
+div.fill-screen {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+img.make-it-fit {
+    max-width: 99%;
+    max-height: 99%;
+}
+
+#fun-text {
+    padding-left: 40px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: darkslategray;
+}
+
+#better-padding {
+    padding-left: 20px;
+}
+
+#misc-text {
+    padding-left: 40px;
+    font-family: cursive;
+    font-size: 25px;
+    color: black;
+}
+
+#endo_table tr:hover {
+    background-color: #ddd;
+}
+
+#endo_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#endo_table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: bold;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+custom-class {
+    
+    position:fixed;
+    border-left:0px;
+    border-right: 200px;
+    bottom: 0;
+    font-family: monospace;
+    font-size: 10px;
+    background-color: darkslateblue;
+    color: aliceblue;
+}
+
+edorsement-head {
+    
+    position:fixed;
+    text-align:center; 
+    font-family: monospace;
+    font-size: 30px;
+    color: black;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}

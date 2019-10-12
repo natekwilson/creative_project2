@@ -8,14 +8,15 @@ document.getElementById("artistSubmit").addEventListener("click", function(event
   fetch(url)
     .then(function(response) {
       return response.json();
-    }).then(function(json) {	
+    }).then(function(json) {
+	  	let relatedArtists = json.similarartists.artist;
 		let results = "";
 		results += '<h2>Related Artists </h2>';
-		for (let i=0; i < json.list.length; i++) 
+		for (let i=0; i < relatedArtists.length ; i++) 
 		{
-			results += json;
+			results += "<p>" + relatedArtists.name + "</p>" + "<br>";
 		}
-      //document.getElementById("artistResults").innerHTML = results;
+      document.getElementById("artistResults").innerHTML = results;
     });
 });
 

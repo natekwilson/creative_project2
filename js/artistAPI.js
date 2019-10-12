@@ -15,7 +15,7 @@ document.getElementById("artistSubmit").addEventListener("click", function(event
 		for (let i=0; i < relatedArtists.length ; i++) 
 		{
 			results += "<p>" + relatedArtists[i].name + "</p>" + "<br>";
-			results += "<img size= \'medium\'>" + relatedArtists[i].image[2].#text + "</img>" + "<br>";
+			results += "<img size= \'medium\'>" + relatedArtists[i].image[2]['#text'] + "</img>" + "<br>";
 		}
       document.getElementById("artistResults").innerHTML = results;
     });

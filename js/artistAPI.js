@@ -14,8 +14,10 @@ document.getElementById("artistSubmit").addEventListener("click", function(event
 		results += '<h2>Related Artists </h2>';
 		for (let i=0; i < relatedArtists.length ; i++) 
 		{
+			results +=	"<div class=\"scrollmenublock\">";
 			results += "<p>" + relatedArtists[i].name + "</p>" + "<br>";
 			results += "<img size= \'small\' src= " + relatedArtists[i].image[1]['#text'] + ">  </img> <br>";
+			results += 	"</div>";
 		}
       document.getElementById("artistResults").innerHTML = results;
     });
